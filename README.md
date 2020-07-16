@@ -31,3 +31,15 @@ Note that you should modify the data path and model path in `config/settings.py`
 ```
 python test_frame.py
 ```
+##Citations
+
+Please consider citing our paper in your publications if the project helps your research.
+
+```
+@inproceedings{PMMs2020,
+  title   =  {Prototype Mixture Models for Few-shot Semantic Segmentation},
+  author  =  {Boyu Yang and Chang Liu and Bohao Li and Jianbin Jiao, and Ye, Qixiang},
+  booktitle =  {ECCV},
+  year    =  {2020}
+}
+```

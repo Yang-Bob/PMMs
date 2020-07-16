@@ -31,7 +31,7 @@ Note that you should modify the data path and model path in `config/settings.py`
 ```
 python test_frame.py
 ```
-##Citations
+## Citations
 
 Please consider citing our paper in your publications if the project helps your research.
 

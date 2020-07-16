@@ -1,10 +1,12 @@
 # Prototype Mixture Models
-Anonymous code for ECCV20 "Prototype Mixture Models for Few-shot Semantic Segmentation", paper id 700.
+ECCV20 "Prototype Mixture Models for Few-shot Semantic Segmentation"
 
 PMMs architecture:
 ![](img/PMMs.jpg)
 RPMMS architecture:
 ![](img/RPMMs.jpg)
+
+The training framework is coming soon！
 
 ## Overview
 This code can test the RPMMs and PMMs on Pascal voc dataset.

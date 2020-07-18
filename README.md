@@ -2,9 +2,9 @@
 ECCV20 "Prototype Mixture Models for Few-shot Semantic Segmentation"
 
 PMMs architecture:
-![](./img/PMMs.jpg)
+![PMMs](./img/PMMs.jpg)
 RPMMS architecture:
-![](./img/RPMMs.jpg)
+![RPMMs](./img/RPMMs.jpg)
 
 The training framework is coming soon！
 

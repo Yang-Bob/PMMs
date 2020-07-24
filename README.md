@@ -77,6 +77,33 @@ python test_frame.py
         <td>50.68</td>
         <td>56.34</td>
     </tr>
+    <tr>
+        <td rowspan="3">5-shot</td>
+        <td>VGG16</td>
+        <td>RPMMs</td>
+        <td>50.00</td>
+        <td>66.46</td>
+        <td>51.94</td>
+        <td>47.64</td>
+        <td>54.01</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Resnet50</td>
+        <td>PMMs</td>
+        <td>55.03</td>
+        <td>68.22</td>
+        <td>52.89</td>
+        <td>5.11</td>
+        <td>56.81</td>
+    </tr>
+    <tr>
+        <td>RPMMs</td>
+        <td>56.28</td>
+        <td>67.34</td>
+        <td>54.52</td>
+        <td>51.00</td>
+        <td>57.30</td>
+    </tr>
 </table>
 
 ## Citations

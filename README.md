@@ -39,8 +39,8 @@ Note that you should modify the data path and model path in `config/settings.py`
 python test_frame.py
 ```
 ## Performance
-|Backbone|Method|Pascal-5<sup>0|Pascal-5<sup>1|Pascal-5<sup>2|Pascal-5<sup>3|Mean |
-| VGG16  |RPMMs |47.14         |65.82         |50.57         |48.54         |53.02|
+| Backbone | Method | Pascal-5<sup>0</sup> | Pascal-5<sup>1</sup> | Pascal-5<sup>2</sup> | Pascal-5<sup>3</sup> | Mean |
+| VGG16  | RPMMs | 47.14         | 65.82         | 50.57         | 48.54         | 53.02 |
 
 ## Citations
 Please consider citing our paper in your publications if the project helps your research.

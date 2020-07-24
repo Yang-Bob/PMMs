@@ -42,7 +42,7 @@ python test_frame.py
 | Backbone | Method | Pascal-5<sup>0</sup> | Pascal-5<sup>1</sup> | Pascal-5<sup>2</sup> | Pascal-5<sup>3</sup> | Mean |
 | --- | --- | --- | --- | --- | --- | --- |
 | VGG16  | RPMMs | 47.14         | 65.82         | 50.57         | 48.54         | 53.02 |
-|<rowspan="2">Resnet50|RPMMs|55.15|66.91|52.61|50.68|56.34|
+|<td rowspan="2">Resnet50|RPMMs|55.15|66.91|52.61|50.68|56.34|
 | |RPMMs|55.15|66.91|52.61|50.68|56.34|
 
 ## Citations

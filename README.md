@@ -41,6 +41,7 @@ python test_frame.py
 ## Performance
 <table>
     <tr>
+        <td>Setting</td>
         <td>Backbone</td>
         <td>Method</td>
         <td>Pascal-5<sup>0</sup></td>
@@ -50,6 +51,7 @@ python test_frame.py
         <td>Mean</td>
     </tr>
     <tr>
+        <td rowspan="3">1-shot</td>
         <td>VGG16</td>
         <td>RPMMs</td>
         <td>47.14</td>

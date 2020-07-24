@@ -39,10 +39,31 @@ Note that you should modify the data path and model path in `config/settings.py`
 python test_frame.py
 ```
 ## Performance
+<table>
+    <tr>
+        <td>Backbone</td>
+        <td>Method</td>
+        <td>Pascal-5<sup>0</sup></td>
+        <td>Pascal-5<sup>1</sup></td>
+        <td>Pascal-5<sup>2</sup></td>
+        <td>Pascal-5<sup>3</sup></td>
+        <td>Mean</td>
+    </tr>
+    <tr>
+        <td rowspan="2">VGG16</td>
+        <td>RPMMs</td>
+        <td>47.14</td>
+        <td>65.82</td>
+        <td>50.57</td>
+        <td>48.54</td>
+        <td>53.02</td>
+    </tr>
+</table>
+
 | Backbone | Method | Pascal-5<sup>0</sup> | Pascal-5<sup>1</sup> | Pascal-5<sup>2</sup> | Pascal-5<sup>3</sup> | Mean |
 | --- | --- | --- | --- | --- | --- | --- |
 | VGG16  | RPMMs | 47.14         | 65.82         | 50.57         | 48.54         | 53.02 |
-<td rowspan="2">Resnet50|RPMMs|55.15|66.91|52.61|50.68|56.34|
+|<td rowspan="2">Resnet50|RPMMs|55.15|66.91|52.61|50.68|56.34|
 | |RPMMs|55.15|66.91|52.61|50.68|56.34|
 
 ## Citations

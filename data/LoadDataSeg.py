@@ -4,7 +4,7 @@ from __future__ import absolute_import
 from config import settings
 from data.transforms import transforms
 from torch.utils.data import DataLoader
-#from data.voc_train import voc_train
+from data.voc_train import voc_train
 from data.voc_val import voc_val
 #from data.coco_train import coco_train
 #from data.coco_val import coco_val
@@ -24,8 +24,8 @@ def data_loader(args):
                                      transforms.Normalize(mean_vals, std_vals)
                                      ])
 
-    if args.dataset == 'coco':
-        img_train = coco_train(args, transform=tsfm_train)
+    #if args.dataset == 'coco':
+        #img_train = coco_train(args, transform=tsfm_train)
     if args.dataset == 'voc':
         img_train = voc_train(args, transform=tsfm_train)
 

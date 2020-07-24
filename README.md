@@ -50,13 +50,31 @@ python test_frame.py
         <td>Mean</td>
     </tr>
     <tr>
-        <td rowspan="2">VGG16</td>
+        <td>VGG16</td>
         <td>RPMMs</td>
         <td>47.14</td>
         <td>65.82</td>
         <td>50.57</td>
         <td>48.54</td>
         <td>53.02</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Resnet50</td>
+        <td>PMMs</td>
+        <td>55.15</td>
+        <td>66.91</td>
+        <td>52.61</td>
+        <td>50.68</td>
+        <td>56.34</td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td>RPMMs</td>
+        <td>55.15</td>
+        <td>66.91</td>
+        <td>52.61</td>
+        <td>50.68</td>
+        <td>56.34</td>
     </tr>
 </table>
 

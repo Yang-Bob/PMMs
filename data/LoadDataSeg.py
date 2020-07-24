@@ -9,7 +9,7 @@ from data.voc_val import voc_val
 #from data.coco_train import coco_train
 #from data.coco_val import coco_val
 
-'''
+
 def data_loader(args):
 
     batch = args.batch_size
@@ -32,7 +32,6 @@ def data_loader(args):
     train_loader = DataLoader(img_train, batch_size=batch, shuffle=True, num_workers=1)
 
     return train_loader
-'''
 
 def val_loader(args, k_shot=1):
     mean_vals = settings.mean_vals

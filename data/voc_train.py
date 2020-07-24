@@ -25,10 +25,11 @@ class voc_train():
         self.num_classes = 20
         self.group = args.group
         self.num_folds = args.num_folds
-        self.binary_map_dir = os.path.join(settings.DATA_DIR, 'VOCdevkit2012/VOC2012/', 'Binary_map_aug/train') #val
+        #self.binary_map_dir = os.path.join(settings.DATA_DIR, 'VOCdevkit2012/VOC2012/', 'Binary_map_aug/train') #val
+        self.data_list_dir = os.path.join('data_list/train')
         self.img_dir = os.path.join(settings.DATA_DIR, 'VOCdevkit2012/VOC2012/', 'JPEGImages/')
         self.mask_dir = os.path.join(settings.DATA_DIR, 'VOCdevkit2012/VOC2012/', 'SegmentationClassAug/')
-        self.binary_mask_dir = os.path.join(settings.DATA_DIR, 'VOCdevkit2012/VOC2012/', 'Binary_map_aug/train/')
+        #self.binary_mask_dir = os.path.join(settings.DATA_DIR, 'VOCdevkit2012/VOC2012/', 'Binary_map_aug/train/')
 
         self.train_id_list = self.get_train_id_list()
         self.list_splite = self.get_total_list()
@@ -56,7 +57,7 @@ class voc_train():
         fold_list.remove(self.group)
 
         for fold in fold_list:
-            f = open(os.path.join(self.binary_map_dir, 'split%1d_train.txt' % (fold)))
+            f = open(os.path.join(self.data_list_dir, 'split%1d_train.txt' % (fold)))
             while True:
                 item = f.readline()
                 if item == '':
@@ -108,21 +109,21 @@ class voc_train():
         mask[mask==category+1] = 1
 
         return mask[:,:,0].astype(np.float32)
-
+    '''
     def read_binary_mask(self, name, category):
         path = self.binary_mask_dir +str(category+1)+'/'+ name + '.png'
         mask = cv2.imread(path)/255
 
         return mask[:,:,0].astype(np.float32)
-
+    '''
     def load_frame(self, support_name, query_name, class_):
         support_img = self.read_img(support_name)
         query_img = self.read_img(query_name)
-        #support_mask = self.read_mask(support_name, class_)
-        #query_mask = self.read_mask(query_name, class_)
+        support_mask = self.read_mask(support_name, class_)
+        query_mask = self.read_mask(query_name, class_)
 
-        support_mask = self.read_binary_mask(support_name, class_)
-        query_mask = self.read_binary_mask(query_name, class_)
+        #support_mask = self.read_binary_mask(support_name, class_)
+        #query_mask = self.read_binary_mask(query_name, class_)
 
         return query_img, query_mask, support_img, support_mask, class_
 

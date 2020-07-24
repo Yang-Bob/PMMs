@@ -28,6 +28,11 @@ pandas,
 matplotlib,
 scikit-image
 
+## Training
+```
+python train.py
+```
+
 ## Inference
 Note that you should modify the data path and model path in `config/settings.py` & `data/voc_val.py`.
 ```

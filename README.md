@@ -40,6 +40,7 @@ python test_frame.py
 ```
 ## Performance
 | Backbone | Method | Pascal-5<sup>0</sup> | Pascal-5<sup>1</sup> | Pascal-5<sup>2</sup> | Pascal-5<sup>3</sup> | Mean |
+| --- | --- | --- | --- | --- | --- | --- |
 | VGG16  | RPMMs | 47.14         | 65.82         | 50.57         | 48.54         | 53.02 |
 
 ## Citations

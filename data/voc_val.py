@@ -18,7 +18,8 @@ class voc_val():
         self.num_classes = 20
         self.group = args.group
         self.num_folds = args.num_folds
-        self.binary_map_dir = os.path.join(settings.DATA_DIR, 'VOCdevkit2012/VOC2012/', 'list/val') #val
+        #self.binary_map_dir = os.path.join(settings.DATA_DIR, 'VOCdevkit2012/VOC2012/', 'list/val') #val
+        self.data_list_dir = os.path.join('data_list/val')
         self.img_dir = os.path.join(settings.DATA_DIR, 'VOCdevkit2012/VOC2012/', 'JPEGImages/')
         self.mask_dir = os.path.join(settings.DATA_DIR, 'VOCdevkit2012/VOC2012/', 'SegmentationClassAug/')
         #self.binary_mask_dir = os.path.join(settings.DATA_DIR, 'VOCdevkit2012/VOC2012/', 'Binary_map_aug/val/')
@@ -33,7 +34,7 @@ class voc_val():
 
     def get_total_list(self):
         new_exist_class_list = []
-        f = open(os.path.join(self.binary_map_dir, 'split%1d_val.txt' % (self.group)))
+        f = open(os.path.join(self.data_list_dir, 'split%1d_val.txt' % (self.group)))
         while True:
             item = f.readline()
             if item == '':

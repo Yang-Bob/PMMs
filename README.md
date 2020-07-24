@@ -61,11 +61,11 @@ python test_frame.py
     <tr>
         <td rowspan="2">Resnet50</td>
         <td>PMMs</td>
-        <td>55.15</td>
-        <td>66.91</td>
-        <td>52.61</td>
-        <td>50.68</td>
-        <td>56.34</td>
+        <td>51.98</td>
+        <td>67.54</td>
+        <td>51.54</td>
+        <td>49.81</td>
+        <td>55.22</td>
     </tr>
     <tr>
         <td>RPMMs</td>
@@ -76,12 +76,6 @@ python test_frame.py
         <td>56.34</td>
     </tr>
 </table>
-
-| Backbone | Method | Pascal-5<sup>0</sup> | Pascal-5<sup>1</sup> | Pascal-5<sup>2</sup> | Pascal-5<sup>3</sup> | Mean |
-| --- | --- | --- | --- | --- | --- | --- |
-| VGG16  | RPMMs | 47.14         | 65.82         | 50.57         | 48.54         | 53.02 |
-|<td rowspan="2">Resnet50|RPMMs|55.15|66.91|52.61|50.68|56.34|
-|RPMMs|55.15|66.91|52.61|50.68|56.34|
 
 ## Citations
 Please consider citing our paper in your publications if the project helps your research.

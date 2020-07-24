@@ -68,7 +68,6 @@ python test_frame.py
         <td>56.34</td>
     </tr>
     <tr>
-        <td> </td>
         <td>RPMMs</td>
         <td>55.15</td>
         <td>66.91</td>
@@ -82,7 +81,7 @@ python test_frame.py
 | --- | --- | --- | --- | --- | --- | --- |
 | VGG16  | RPMMs | 47.14         | 65.82         | 50.57         | 48.54         | 53.02 |
 |<td rowspan="2">Resnet50|RPMMs|55.15|66.91|52.61|50.68|56.34|
-| |RPMMs|55.15|66.91|52.61|50.68|56.34|
+|RPMMs|55.15|66.91|52.61|50.68|56.34|
 
 ## Citations
 Please consider citing our paper in your publications if the project helps your research.

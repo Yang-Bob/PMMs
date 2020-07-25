@@ -43,9 +43,7 @@ def save_model(args, count, model, optimizer):
     if count % args.save_interval == 0 and count > 0:
         save_checkpoint(args,
                         {
-                            'global_counter': count,
-                            'state_dict': model.state_dict(),
-                            'optimizer': optimizer.state_dict()
+                            'state_dict': model.state_dict()
                         }, is_best=False,
                         filename='step_%d.pth.tar'
                                  % (count))

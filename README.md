@@ -15,7 +15,7 @@ This code can test the RPMMs and PMMs on Pascal voc dataset.
 - `networks/` contains the implementation of the PMMs(`FPMMs.py`) & RPMMs(`FRPMMs.py`);
 - `models/` contains the backbone & PMMs module;
 - `snapshots/` contains the FRPMMs parameters;
-- `utils/` contains other dependent code :
+- `utils/` contains other dependent code;
 
 ## Dependencies
 python == 3.7,

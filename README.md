@@ -93,7 +93,7 @@ python test_frame.py
         <td>55.03</td>
         <td>68.22</td>
         <td>52.89</td>
-        <td>5.11</td>
+        <td>51.11</td>
         <td>56.81</td>
     </tr>
     <tr>

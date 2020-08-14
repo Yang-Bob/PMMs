@@ -1,5 +1,5 @@
 # Prototype Mixture Models
-ECCV20 ["Prototype Mixture Models for Few-shot Semantic Segmentation"](https://arxiv.org/pdf/2008.03898.pdf）
+ECCV20 "[Prototype Mixture Models for Few-shot Semantic Segmentation](https://arxiv.org/pdf/2008.03898.pdf)"
 
 PMMs architecture:
 ![PMMs](./img/PMMs.jpg)

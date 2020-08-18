@@ -1,12 +1,11 @@
 # Prototype Mixture Models
-ECCV20 "[Prototype Mixture Models for Few-shot Semantic Segmentation](https://arxiv.org/pdf/2008.03898.pdf)"
+This code is for the paper "[Prototype Mixture Models for Few-shot Semantic Segmentation](https://arxiv.org/pdf/2008.03898.pdf)" in European Conference on Computer Vision(ECCV 2020).
 
 PMMs architecture:
 ![PMMs](./img/PMMs.jpg)
 RPMMS architecture:
 ![RPMMs](./img/RPMMs.jpg)
 
-The training framework is coming soon！
 
 ## Overview
 This code can test the RPMMs and PMMs on Pascal voc dataset.
@@ -117,3 +116,10 @@ Please consider citing our paper in your publications if the project helps your 
   year    =  {2020}
 }
 ```
+
+## References
+Some of our Code is based on the following code:
+EMANet:[https://github.com/XiaLiPKU/EMANet](https://github.com/XiaLiPKU/EMANet)
+CANet:[https://github.com/icoz69/CaNet](https://github.com/icoz69/CaNet)
+SG-One:[https://github.com/xiaomengyc/SG-One](https://github.com/xiaomengyc/SG-One)
+

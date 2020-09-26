@@ -8,12 +8,14 @@ RPMMS architecture:
 
 
 ## Overview
-This code can test the RPMMs and PMMs on Pascal voc dataset.
-- `data/` contains the dataloader and dataset for inference;
-- `config/` contains the config file;
-- `networks/` contains the implementation of the PMMs(`FPMMs.py`) & RPMMs(`FRPMMs.py`);
+This code contains two methods called PMMs and RPMMs.You can train or test them on Pascal voc or COCO dataset.
+The experiments are divided into into 4 independent groups for cross validation 
+- `config/` contains the config setting file for data and network;
+- `data/` contains the dataloader and dataset;
+- `data_list/` contains the data list for training and inference;
 - `models/` contains the backbone & PMMs module;
-- `snapshots/` contains the FRPMMs parameters;
+- `networks/` contains the implementation of the PMMs(`FPMMs.py`) & RPMMs(`FRPMMs.py`);
+- `scripts/` contains the shell file to use this code succinctly;
 - `utils/` contains other dependent code;
 
 ## Dependencies
@@ -27,13 +29,17 @@ pandas,
 matplotlib,
 scikit-image
 
-## Training
+## Usage
+This code is very simple to use. You can train and test it just follow the steps below. 
+### Preparation
+After downloading the code, installing dependencies. You should modify the data path and model path in `config/settings.py`.
+Note that you may need to check the hierarchy of the dataset in `data/voc_train.py`, `data/voc_val.py`, `data/coco_val.py`, `data/coco_val.py`
+### Training
 ```
-python train.py
+cd scripts
+sh train_group0.sh
 ```
-
-## Inference
-Note that you should modify the data path and model path in `config/settings.py` & `data/voc_val.py`.
+### Inference
 ```
 python test_frame.py
 ```

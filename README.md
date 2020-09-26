@@ -9,7 +9,8 @@ RPMMS architecture:
 
 ## Overview
 This code contains two methods called PMMs and RPMMs.You can train or test them on Pascal voc or COCO dataset.
-The experiments are divided into into 4 independent groups for cross validation 
+
+The experiments are divided into into 4 independent groups for cross validation.
 - `config/` contains the config setting file for data and network;
 - `data/` contains the dataloader and dataset;
 - `data_list/` contains the data list for training and inference;
@@ -33,6 +34,7 @@ scikit-image
 This code is very simple to use. You can train and test it just follow the steps below. 
 ### Preparation
 After downloading the code, installing dependencies. You should modify the data path and model path in `config/settings.py`.
+
 Note that you may need to check the hierarchy of the dataset in `data/voc_train.py`, `data/voc_val.py`, `data/coco_val.py`, `data/coco_val.py`
 ### Training
 ```
@@ -43,7 +45,7 @@ sh train_group0.sh
 ```
 python test_frame.py
 ```
-## Cross-validation classes for >Pascal-5<sup>0</sup>
+## Cross-validation classes for Pascal-5<sup>0</sup>
 |Dataset|Test class|
 |  ----  | ----  |
 |Pascal-5<sup>0</sup>|aeroplane, bicycle, bird, boat, bottle|

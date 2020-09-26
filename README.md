@@ -43,6 +43,13 @@ sh train_group0.sh
 ```
 python test_frame.py
 ```
+## Cross-validation classes for >Pascal-5<sup>0</sup>
+|Dataset|Test class|
+|Pascal-5<sup>0</sup>|aeroplane, bicycle, bird, boat, bottle|
+|Pascal-5<sup>1</sup>|bus, car, cat, chair, cow|
+|Pascal-5<sup>2</sup>|diningtable, dog, horse, motorbike, person|
+|Pascal-5<sup>3</sup>|potted plant, sheep, sofa, train, tv/monitor|
+
 ## Performance
 <table>
     <tr>

@@ -45,13 +45,21 @@ sh train_group0.sh
 ```
 python test_frame.py
 ```
-## Cross-validation classes for Pascal-5<sup>0</sup>
+## Cross-validation classes for Pascal-5<sup>i</sup>
 |Dataset|Test class|
 |  ----  | ----  |
-|Pascal-5<sup>0</sup>|aeroplane, bicycle, bird, boat, bottle|
-|Pascal-5<sup>1</sup>|bus, car, cat, chair, cow|
-|Pascal-5<sup>2</sup>|diningtable, dog, horse, motorbike, person|
-|Pascal-5<sup>3</sup>|potted plant, sheep, sofa, train, tv/monitor|
+|Pascal-5<sup>0</sup>|person, airplane, boat, parking meter, dog,<br>elephant, backpack, suitcase, sports ball, skateboard,<br>wine glass, spoon, sandwich, hot dog, chair,<br>dining table, mouse, microwave, scissors|
+|Pascal-5<sup>1</sup>|bicycle, bus, traffic light, bench, <br>horse, bear, umbrella, frisbee, kite, surfboard, <br>cup, bowl, orange, pizza, couch,<br>toilet, remote, oven, book, teddy bear|
+|Pascal-5<sup>2</sup>|car, train, fire hydrant, bird, sheep, <br>zebra, handbag, skis, baseball bat, tennis racket, <br>fork, banana, broccoli, donut, potted plant, <br>tv, keyboard, sink, toaster, clock, hair drier|
+|Pascal-5<sup>3</sup>|motorcycle, truck, stop sign, cat, cow, <br>giraffe, tie, snowboard, baseball glove, bottle, <br>knife, apple, carrot, cake, bed, <br>laptop, cell phone, refrigerator, vase, toothbrush|
+
+## Cross-validation classes for COCO-20<sup>i</sup>
+|Dataset|Test class|
+|  ----  | ----  |
+|COCO-20<sup>0</sup>|aeroplane, bicycle, bird, boat, bottle|
+|COCO-20<sup>1</sup>|bus, car, cat, chair, cow|
+|COCO-20<sup>2</sup>|diningtable, dog, horse, motorbike, person|
+|COCO-20<sup>3</sup>|potted plant, sheep, sofa, train, tv/monitor|
 
 ## Performance
 <table>

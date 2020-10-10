@@ -9,7 +9,10 @@ def restore(args, model):
 
     group = args.group
     savedir = os.path.join(args.snapshot_dir, args.arch, 'group_%d_of_%d'%(group, args.num_folds))
-    filename='step_%d.pth.tar'%(args.restore_step)
+    if args.restore_step=='best':
+        filename='%s.pth.tar'%(args.restore_step)
+    else:
+        filename='step_%d.pth.tar'%(args.restore_step)
     snapshot = os.path.join(savedir, filename)
     assert os.path.exists(snapshot), "Snapshot file %s does not exist."%(snapshot)
 

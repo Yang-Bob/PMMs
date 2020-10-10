@@ -6,8 +6,8 @@ from data.transforms import transforms
 from torch.utils.data import DataLoader
 from data.voc_train import voc_train
 from data.voc_val import voc_val
-#from data.coco_train import coco_train
-#from data.coco_val import coco_val
+from data.coco_train import coco_train
+from data.coco_val import coco_val
 
 
 def data_loader(args):
@@ -24,8 +24,8 @@ def data_loader(args):
                                      transforms.Normalize(mean_vals, std_vals)
                                      ])
 
-    #if args.dataset == 'coco':
-        #img_train = coco_train(args, transform=tsfm_train)
+    if args.dataset == 'coco':
+        img_train = coco_train(args, transform=tsfm_train)
     if args.dataset == 'voc':
         img_train = voc_train(args, transform=tsfm_train)
 
@@ -44,8 +44,8 @@ def val_loader(args, k_shot=1):
 
                                    ])
 
-    #if args.dataset == 'coco':
-        #img_val = coco_val(args, transform=tsfm_val, k_shot=k_shot)
+    if args.dataset == 'coco':
+        img_val = coco_val(args, transform=tsfm_val, k_shot=k_shot)
     if args.dataset == 'voc':
         img_val = voc_val(args, transform=tsfm_val, k_shot=k_shot)
 

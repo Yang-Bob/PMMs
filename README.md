@@ -43,7 +43,7 @@ sh train_group0.sh
 ```
 ### Inference
 ```
-python test_frame.py
+python test_all_frame.py
 ```
 ## Cross-validation classes for Pascal-5<sup>i</sup>
 |Dataset|Test class|

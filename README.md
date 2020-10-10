@@ -42,9 +42,15 @@ cd scripts
 sh train_group0.sh
 ```
 ### Inference
+If you want to test all of the saved models, you can use:
 ```
 python test_all_frame.py
 ```
+If you want to test our pretrained model, you can download them from [https://github.com/ECCV20/PMMs/tree/master/snapshots/FRPMMs](https://github.com/ECCV20/PMMs/tree/master/snapshots/FRPMMs). And test them using:
+```
+python test_frame.py
+```
+
 ## Cross-validation classes for Pascal-5<sup>i</sup>
 |Dataset|Test class|
 |  ----  | ----  |

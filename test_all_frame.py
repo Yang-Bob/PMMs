@@ -8,7 +8,7 @@ import argparse
 from torch.autograd import Variable
 from data.LoadDataSeg import val_loader
 from utils import NoteEvaluation
-from oneshot import *
+from networks import *
 from utils.Restore import restore
 
 from config import settings

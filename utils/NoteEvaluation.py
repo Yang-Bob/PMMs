@@ -63,7 +63,6 @@ class Evaluation():
 
     def test_in_train(self,query_label, pred):
         # test
-
         pred = pred.data.cpu().numpy().astype(np.int32)
         query_label = query_label.cpu().numpy().astype(np.int32)
 
@@ -71,3 +70,44 @@ class Evaluation():
         total = tp + fp + fn
 
         return tp, total
+
+class note_best(object):
+
+    def __init__(self):
+        self.init_independent()
+        
+    def init_independent(self):
+        # independent
+        self.best0 = 0
+        self.best1 = 0
+        self.best2 = 0
+        self.best3 = 0
+        self.best0_step = 0
+        self.best1_step = 0
+        self.best2_step = 0
+        self.best3_step = 0
+        self.best_mean = 0
+
+    def update(self, mIou, restore_step, iou_list, evaluations):
+        self.update_independent_fold(restore_step, iou_list, evaluations)
+
+    def update_independent_fold(self, restore_step, iou_list, evaluations):
+
+        g0 = evaluations.group_mean_iou[0]
+        g1 = evaluations.group_mean_iou[1]
+        g2 = evaluations.group_mean_iou[2]
+        g3 = evaluations.group_mean_iou[3]
+
+        if g0 > self.best0:
+            self.best0 = g0
+            self.best0_step = restore_step
+        if g1 > self.best1:
+            self.best1 = g1
+            self.best1_step = restore_step
+        if g2 > self.best2:
+            self.best2 = g2
+            self.best2_step = restore_step
+        if g3 > self.best3:
+            self.best3 = g3
+            self.best3_step = restore_step
+        self.best_mean = (self.best0+self.best1+self.best2+self.best3)/4

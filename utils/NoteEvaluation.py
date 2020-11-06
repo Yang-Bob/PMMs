@@ -11,9 +11,7 @@ def measure(y_in, pred_in):
     fn = np.logical_and(y, np.logical_not(pred)).sum()
     return tp, tn, fp, fn
 
-
 class Evaluation():
-
     def __init__(self, args):
         if args.dataset == 'coco':
             self.num_classes = 80
@@ -62,7 +60,6 @@ class Evaluation():
         self.group_mean_iou[self.group] = np.mean(np.take(self.iou_list, self.class_indexes))
 
     def test_in_train(self,query_label, pred):
-        # test
         pred = pred.data.cpu().numpy().astype(np.int32)
         query_label = query_label.cpu().numpy().astype(np.int32)
 
@@ -72,12 +69,10 @@ class Evaluation():
         return tp, total
 
 class note_best(object):
-
     def __init__(self):
         self.init_independent()
         
     def init_independent(self):
-        # independent
         self.best0 = 0
         self.best1 = 0
         self.best2 = 0
@@ -92,7 +87,6 @@ class note_best(object):
         self.update_independent_fold(restore_step, iou_list, evaluations)
 
     def update_independent_fold(self, restore_step, iou_list, evaluations):
-
         g0 = evaluations.group_mean_iou[0]
         g1 = evaluations.group_mean_iou[1]
         g2 = evaluations.group_mean_iou[2]

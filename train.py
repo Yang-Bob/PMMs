@@ -53,6 +53,7 @@ def get_model(args):
     print('Number of Parameters: %d' % (get_model_para_number(model)))
 
     if args.start_count > 0:
+        args.restore_step = args.start_count
         restore(args, model)
         print("Resume training...")
 

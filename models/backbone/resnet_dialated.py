@@ -148,7 +148,6 @@ class ResNet(nn.Module):
         return block(dilation_series, padding_series, num_classes)
 
     def forward(self, x):
-        # important: do not optimize the RESNET backbone
         x = self.conv1(x)
         x = self.bn1(x)
         x = self.relu(x)
